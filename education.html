@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
+  <title>Educational Background</title>
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-size: 1.2rem;
+      position: relative;
+    }
+
+    /* Background image and overlay */
+    .background-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('bg1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.4; /* Lower opacity of the background image */
+      z-index: -1; /* Place the background behind the content */
+    }
+
+    .section-title {
+      background-color: #4682b4;
+      padding: 15px;
+      color: white;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .education-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p, li {
+      font-size: 1.3rem;
+    }
+
+    /* Media query for responsiveness */
+    @media (min-width: 768px) {
+      .card-columns {
+        column-count: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Overlay -->
+  <div class="background-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="font-size: 1.5rem;">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Myself</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active" href="education.html">Educational Background</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Education Section -->
+  <section class="container my-5" data-aos="fade-up">
+    <h1 class="text-center mb-5">My Educational Background</h1>
+
+    <!-- Education Cards -->
+    <div class="row card-columns">
+      <!-- Tertiary Education -->
+      <div class="col-md-6 mb-4">
+        <div class="education-card" data-aos="fade-right">
+          <h2>Tertiary Education</h2>
+          <p><strong>School:</strong> Kolehiyo ng Lungsod ng Dasmariñas</p>
+          <p><strong>Year:</strong> 2023 - Present</p>
+          <p><strong>Degree:</strong> Bachelor of Science in Information System</p>
+          <p><strong>Highlights:</strong> Focus on the effective design, delivery, and use of information and communications technologies to solve problems for companies, governments, and society.</p>
+        </div>
+      </div>
+
+      <!-- Secondary Education -->
+      <div class="col-md-6 mb-4">
+        <div class="education-card" data-aos="fade-left">
+          <h2>High School Education</h2>
+          <p><strong>School:</strong> Langkaan National High School </p>
+          <p><strong>Year:</strong> 2017 - 2020</p>
+          <h2>Senior High School Education</h2>
+          <p><strong>School:</strong> The First Uniting Christian Senior High School</p>
+          <p><strong>Year:</strong> 2021 - 2023</p>
+          <p><strong>Strand:</strong> Home Economics</p>
+          <p><strong>Highlights:</strong> encompasses a wide variety of subjects, including foods and nutrition; clothing and textiles; housing, home equipment, and home management; family economics; child development; and family relations.</p>
+        </div>
+      </div>
+
+      <!-- Primary Education -->
+      <div class="col-md-6 mb-4">
+        <div class="education-card" data-aos="fade-right">
+          <h2>Primary Education</h2>
+          <p><strong>School:</strong> Bayanan Elementary School</p>
+          <p><strong>Year:</strong> 2011 - 2017</p>
+          
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="education-card" data-aos="fade-right">
+          <h2>ACADEMIC AWARDS</h2>
+          <h3>Work Immersion(Senior High Schol) </h3>
+      <p>Good Assistance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-dark text-light py-3">
+    <p>&copy; 2024 Alvee Christian B. De Castro</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
